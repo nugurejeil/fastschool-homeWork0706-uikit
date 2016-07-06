@@ -1,0 +1,35 @@
+@charset "utf-8";
+/*common CSS*/
+
+/*목록초기화 스타일 모듈*/
+
+.reset-list ul,
+.reset-list ol,
+ul.reset-list,
+ol.reset-list{
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+}
+img{
+	vertical-align: bottom;
+}
+
+.cf:after{
+	display:block;
+	content:'';
+	clear:both;
+}
+
+.hide-text{
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
