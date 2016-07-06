@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+.clearfix:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+body{
+	/*background: url(img/leading27.png);*/
+	font: 1.125rem/1.5 "Spoqa Han Snas", sans-serif;
+	color: #2c2c2c;
+	/*background-image: linear-gradient(angle, colo-stop 0%, colo-stop 0%, colo-stop 0%, colo-stop 0% );*/
+	
+	
+	
+}
+/*그리드 만들기*/
+body{
+	background-image: linear-gradient(180deg, transparent 95%, #7045cf 95%);
+	background-size: 1px 1.6875rem;
+}
+ul { 
+   list-style-type: disc; 
+   list-style-position: inside; 
+}
+ol { 
+   list-style-type: decimal; 
+   list-style-position: inside; 
+}
+ul ul, ol ul { 
+   list-style-type: circle; 
+   list-style-position: inside; 
+   margin-left: 15px; 
+}
+ol ol, ul ol { 
+   list-style-type: lower-latin; 
+   list-style-position: inside; 
+   margin-left: 15px; 
+}
+h1, h2, h3, h4, h5, h6, p{
+	margin-bottom: 1.6875rem;
+}
+
+h6, h5, h4{
+	font-weight: 700;
+
+}
+h5{
+	font-size: 1.35rem;
+}
+h4{font-size: 1.62rem;}
+h3, h2, h1{font-weight: 200;}
+h3{font-size: 1.94375rem;}
+h2, h3, h4{
+	line-height: 3.375rem;
+}
+h5, h6{
+	line-height: 1.6875rem;
+}
+h2{font-size: 2.3325rem; }
+h1{font-size: 2.79875rem; line-height: 5.0625rem;}
+
+
+.lists{
+	float:left;
+	margin-left: 50px;
+	margin-bottom: 1.6875rem;
+}
+tbody{
+	text-align: center;
+}
+th, td{
+	border-right:1px solid black;
+}
+table th{
+	background: lightgray;
+}
+table td{
+	width: 100px;
+}
+table td:first-child{
+	width: 200px;
+}
+
+
+.parent > div{
+  width:100px;
+  height:100px;
+  background: royalblue;
+  margin: 15px 14px;
+  float: left;
+  color:white;
+  text-align:center;
+  line-height:100px;
+  /*vertical-align: middle;*/
+}
+
+
+.parent > div:nth-child(1){
+  background: #fcb409;
+}
+
+.parent > div:nth-child(1)::after{
+  float:left;
+  content:"WARNING";
+  color:black;
+  line-height:20px;
+}
+
+.parent > div:nth-child(2){
+  background: #63a2fc;
+}
+
+.parent > div:nth-child(2)::after{
+  float:left;
+  content:"INFOMATION";
+  color:black;
+  line-height:20px;
+}
+
+.parent > div:nth-child(3){
+  background: #44cb83;
+}
+.parent > div:nth-child(3)::after{
+  float:left;
+  content:"SUCCESS";
+  color:black;
+  line-height:20px;
+}
+
+.parent > div:nth-child(4){
+  background: #7171ef;
+}
+.parent > div:nth-child(4)::after{
+  float:left;
+  content:"PRIMARY";
+  color:black;
+  line-height:20px;
+}
+
+.parent > div:nth-child(5){
+  background: #ff5448;
+}
+.parent > div:nth-child(5)::after{
+  float:left;
+  content:"DANGER";
+  color:black;
+  line-height:20px;
+}
+.parent > div:nth-child(6){
+  background: #787f94;
+}
+.parent > div:nth-child()::after{
+  float:left;
+  content:"DEFAULT";
+  color:black;
+  line-height:20px;
+}
+
+.parent{
+  width: 800px;
+}
+
+
+
+
+
+
+
